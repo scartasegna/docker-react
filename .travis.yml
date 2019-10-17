@@ -6,4 +6,4 @@ before_install:
   - docker build -t santicarta/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run santicarta/docker-react npm run test -- App.test.js
+  - docker run santicarta/docker-react npm run test -- App.test.js --coverage
